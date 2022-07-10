@@ -36,3 +36,21 @@
     transform: rotate(360deg);
   }
 }
+
+/* 
+<input hidden={id !== index} type="text" defaultValue={nameToBeUpdate} onChange={(e) => setNameToUpdate(e.target.value)}></input>
+<button disabled={!nameToBeUpdate} hidden={id !== index} onClick={() => handleSave(index)}>Save</button> */
+
+
+/* const handleUpdate = (item, id) => {
+  setNameToUpdate(item.name);
+  setId(id); 
+}
+
+const handleSave = (id) => {
+  let prevData = JSON.parse(localStorage.getItem('data'));
+  let objectToBeUpdate = prevData[id];
+  objectToBeUpdate['name'] = nameToBeUpdate;
+  prevData.splice(id, 1, objectToBeUpdate);
+  localStorage.setItem('data', JSON.stringify(prevData));
+}  */
